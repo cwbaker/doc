@@ -1,0 +1,47 @@
+<div class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p>{{ site.description }}</p>
+    </div>
+
+    <hr />
+    <nav class="sidebar-nav">
+      <ul class="navigation-list">
+        {%- assign pages_list = site.html_pages | sort:"nav_order" -%}
+        {%- for node in pages_list -%}
+          {%- unless node.nav_exclude -%}
+            {%- if node.parent == nil -%}
+              <li class="sidebar-nav-item">
+                {%- if page.parent == node.title -%}
+                  {%- assign first_level_url = node.url | absolute_url -%}
+                {%- endif -%}
+                <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                {%- if node.has_children -%}
+                  {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
+                  <ul class="sidebar-nav-item">
+                    {%- for child in children_list -%}
+                      <li class="sidebar-nav-item {% if page.url == child.url %} active{% endif %}">
+                        {%- if page.url == child.url or page.parent == child.title -%}
+                          {%- assign second_level_url = child.url | absolute_url -%}
+                        {%- endif -%}
+                        <a href="{{ child.url | absolute_url }}" class="navigation-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endif -%}
+          {%- endunless -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+    <hr />
+
+    <p class="small">&copy; Charles Baker. All rights reserved.</p>
+  </div>
+</div>
