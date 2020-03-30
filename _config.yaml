@@ -1,0 +1,30 @@
+# Dependencies
+# highlighter: pygments
+markdown: kramdown
+
+kramdown:
+  parse_block_html: true
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: doc
+tagline: ''
+description: 'A simple documentation theme for Jekyll and Github Pages'
+url: https://cwbaker.github.io
+baseurl: 
+author:
+  name: 'Charles Baker'
+
+# Custom vars
+github_project: cwbaker/doc
+downloads: https://github.com/cwbaker/doc/releases
+version: 0.0.1
+
+plugins:
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-remote-theme
+- jekyll-sitemap
+- jemoji
