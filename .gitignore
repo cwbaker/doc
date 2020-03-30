@@ -1,0 +1,8 @@
+_gh_pages
+_site
+.ruby-version
+.DS_Store
+._*
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
