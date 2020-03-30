@@ -18,7 +18,7 @@ html, body {
 
 html {
   font-family: Lora, serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -60,7 +60,6 @@ a:hover, a:focus {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
-  /*font-weight: normal;*/
   line-height: 1.25;
   text-rendering: optimizeLegibility;
 }
@@ -213,7 +212,7 @@ td, th {
 }
 
 tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: #f2f2f2;
 }
 
 /* Custom type */
