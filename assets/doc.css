@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  color: #505050;
+  color: #333;
   background-color: #fafafa;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -137,7 +137,7 @@ code {
   padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   border-radius: 3px;
 }
 
@@ -152,7 +152,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
 }
 
 pre code {
@@ -176,7 +176,7 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
+  color: #666;
   border-left: .25rem solid #e5e5e5;
 }
 
@@ -273,7 +273,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 }
 
 .sidebar a {
-  color: #505050;
+  color: #333;
 }
 
 .sidebar ul, ol, dl {
@@ -282,7 +282,6 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 }
 
 .sidebar-about h1 {
-  color: #505050;
   margin-top: 0;
   font-family: "Abril Fatface", serif;
   font-size: 3.25rem;
