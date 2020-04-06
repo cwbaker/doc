@@ -18,8 +18,14 @@ html, body {
 
 html {
   font-family: Lora, serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
+}
+
+@media (min-width: 56rem) {
+  html {
+    font-size: 18px;
+  }
 }
 
 body {
