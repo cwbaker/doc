@@ -18,14 +18,8 @@ html, body {
 
 html {
   font-family: Lora, serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-}
-
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
 }
 
 body {
@@ -180,7 +174,7 @@ blockquote {
   border-left: .25rem solid #e5e5e5;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 56rem) {
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
@@ -223,8 +217,8 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
 
 /* Container */
 .container {
-  max-width: 38rem;
-  padding-left:  1rem;
+  max-width: 56rem;
+  padding-left: 1rem;
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -235,7 +229,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 56rem) {
   .content {
     max-width: 38rem;
     margin-left: 18rem;
@@ -261,7 +255,7 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   padding: 2rem 1rem 0 0;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 56rem) {
   .sidebar {
     float: left;
     top: 0;
