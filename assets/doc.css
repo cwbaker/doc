@@ -97,6 +97,11 @@ strong {
 ul, ol, dl {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+li ul, li ol, li dl {
+  margin: 0 0 0 0;  
 }
 
 dt {
