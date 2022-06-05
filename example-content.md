@@ -2,6 +2,7 @@
 layout: page
 title: Example Content
 nav_order: 2
+has_children: true
 ---
 
 - TOC
