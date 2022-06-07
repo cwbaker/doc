@@ -182,8 +182,8 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #556;
-  border-left: .25rem solid #ccb;
+  color: #555;
+  border-left: .25rem solid #999;
 }
 
 @media (min-width: 56rem) {
