@@ -8,7 +8,7 @@ nav_order: 1
 
 ## Usage
 
-Use Doc as a remote theme by adding the following to `_config.yaml` for your Jekyll site:
+Use Doc as a remote theme by adding the following in *_config.yaml*:
 
 ~~~yaml
 remote_theme: cwbaker/doc

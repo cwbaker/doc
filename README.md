@@ -4,13 +4,11 @@
 
 ## Usage
 
-Use *Doc* as a remote theme by adding the following line to *_config.yaml* for your Jekyll site:
+Use Doc as a remote theme by adding the following in *_config.yaml*:
 
 ~~~yaml
 remote_theme: cwbaker/doc
 ~~~
-
-*Doc* is not a Gem-based theme.  Using it as a remote theme from Github Pages is enough for my needs so I haven't made the extra effort of making it into a Gem.
 
 ## Contributions
 
@@ -18,4 +16,4 @@ I'm not expecting contributions to this repository.  Feel free to fork or copy a
 
 ## License
 
-*Doc* is licensed under the [MIT License](http://www.opensource.org/licenses/MIT).
+Doc is licensed under the [MIT License](http://www.opensource.org/licenses/MIT).
