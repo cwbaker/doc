@@ -45,7 +45,9 @@ body {
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
   color: #111;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  border-bottom-color: #888;
 }
 
 a strong {
@@ -55,7 +57,9 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover, a:focus {
   color: #268bd2;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  border-bottom-color: #268bd2;
 }
 
 /* Headings */
@@ -99,7 +103,6 @@ strong {
 ul, ol, dl {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  list-style-type: disc;
 }
 
 li ul, li ol, li dl {
@@ -256,6 +259,10 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   margin-top: 0;
 }
 
+nav ul {
+  list-style-type: none;  
+}
+
 /* Sidebar */
 .sidebar {
   text-align: left;
@@ -271,11 +278,6 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
     width: 18rem;
     padding: 2rem 1rem;
   }
-}
-
-.sidebar a {
-  color: #111;
-  text-decoration: none;
 }
 
 .sidebar ul, ol, dl {
@@ -297,15 +299,20 @@ tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
   display: block;
 }
 
-.sidebar a:hover, .sidebar a:focus {
-  text-decoration: underline;
-}
-
-.sidebar-nav-item.active {
+.active {
   font-weight: bold;
 }
 
 /* Table of contents */
+#markdown-toc ul, #markdown-toc li {
+  padding-inline-start: 12px;
+  list-style-type: none;
+}
+
+#markdown-toc {
+  padding-inline-start: 0;
+}
+
 #markdown-toc li a {
   text-decoration: none;
 }

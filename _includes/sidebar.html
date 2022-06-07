@@ -12,7 +12,7 @@
 
     <hr />
     <nav class="sidebar-nav">
-      <ul class="navigation-list">
+      <ul>
         {%- assign pages_list = site.html_pages | sort:"nav_order" -%}
         {%- for node in pages_list -%}
           {%- unless node.nav_exclude -%}
@@ -21,7 +21,7 @@
                 {%- if page.parent == node.title -%}
                   {%- assign first_level_url = node.url | absolute_url -%}
                 {%- endif -%}
-                <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | absolute_url }}">{{ node.title }}</a>
+                <a {% if page.url == node.url %} class="active"{% endif %} href="{{ node.url | absolute_url }}">{{ node.title }}</a>
                 {%- if node.has_children -%}
                   {%- assign children_list = site.html_pages | where: "parent", node.title | sort:"nav_order" -%}
                   <ul class="sidebar-nav-item">
@@ -40,10 +40,14 @@
           {%- endunless -%}
         {%- endfor -%}
         {%- if site.downloads != blank and site.downloads != empty -%}
-          <a class="sidebar-nav-item" href="https://github.com/{{ site.github_project }}/releases">Downloads</a>
+          <li>
+            <a href="https://github.com/{{ site.github_project }}/releases">Downloads</a>
+          </li>
         {%- endif -%}
         {%- if site.github_project != blank and site.github_project != empty -%}
-          <a class="sidebar-nav-item" href="https://github.com/{{ site.github_project }}">GitHub</a>
+          <li>
+            <a href="https://github.com/{{ site.github_project }}">GitHub</a>
+          </li>
         {%- endif -%}
       </ul>
     </nav>
