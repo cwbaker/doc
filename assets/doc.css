@@ -280,7 +280,7 @@ nav ul {
   }
 }
 
-.sidebar ul, ol, dl {
+.sidebar ul, .sidebar ol, .sidebar dl {
   margin: 0 0 0 0;
   padding: 0 0 0 1rem;
 }
