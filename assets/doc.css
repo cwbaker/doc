@@ -17,14 +17,14 @@ html, body {
 }
 
 html {
-  font-family: Lora, serif;
+  font-family: 'Source Serif Pro', serif;
   font-size: 14px;
   line-height: 1.5;
 }
 
 @media (min-width: 56rem) {
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
